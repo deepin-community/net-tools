@@ -1,0 +1,29 @@
+Source: net-tools
+Maintainer: net-tools Team <team+net-tools@tracker.debian.org>
+Uploaders: Martina Ferrari <tina@debian.org>,
+           Utkarsh Gupta <utkarsh@debian.org>
+Section: net
+Priority: important
+Build-Depends: debhelper-compat (= 12),
+               gettext,
+               libdnet-dev,
+               libselinux1-dev,
+Standards-Version: 4.5.0
+Vcs-Browser: https://salsa.debian.org/debian/net-tools
+Vcs-Git: https://salsa.debian.org/debian/net-tools.git
+Homepage: http://sourceforge.net/projects/net-tools/
+
+Package: net-tools
+Architecture: any
+Multi-Arch: foreign
+Depends: ${misc:Depends},
+         ${shlibs:Depends},
+Description: NET-3 networking toolkit
+ This package includes the important tools for controlling the network
+ subsystem of the Linux kernel.  This includes arp, ifconfig, netstat,
+ rarp, nameif and route.  Additionally, this package contains utilities
+ relating to particular network hardware types (plipconfig, slattach,
+ mii-tool) and advanced aspects of IP configuration (iptunnel, ipmaddr).
+ .
+ In the upstream package 'hostname' and friends are included. Those are
+ not installed by this package, since there is a special "hostname*.deb".
